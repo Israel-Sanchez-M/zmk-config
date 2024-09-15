@@ -25,8 +25,16 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp N0 &kp N2 &kp N4 &kp N1>,
+                <&kp N0>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_wait_time 50>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
@@ -34,15 +42,17 @@
         };
 
         add_accent: add_accent {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             bindings =
                 <&macro_press>,
                 <&kp RCTRL>,
                 <&macro_tap>,
                 <&kp APOSTROPHE>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LCTRL &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>;
 
             label = "ADD_ACCENT";
         };
@@ -61,7 +71,7 @@
             bindings = <
 &kp TAB      &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL    &kp A  &kp S  &kp D       &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &add_accent
-&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DOLLAR
+&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp APOSTROPHE
                            &lt 3 LGUI  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
             >;
         };
@@ -92,7 +102,7 @@
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
 &kp LCTRL  &trans    &trans  &trans    &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp F5    &trans  &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &kp LC(X)  &kp SPACE    &kp RET    &trans     &kp RALT
+                             &trans    &kp LC(X)  &kp SPACE    &kp RET    &mo 4      &kp RALT
             >;
         };
 
@@ -102,6 +112,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &add_accent Q  &add_accent W  &add_accent E  &add_accent R  &add_accent T    &add_accent Y  &add_accent U  &add_accent I      &add_accent O    &add_accent P     &trans
+&trans  &add_accent A  &add_accent S  &add_accent D  &add_accent F  &add_accent G    &add_accent H  &add_accent J  &add_accent K      &add_accent L    &add_accent N     &trans
+&trans  &add_accent Z  &add_accent X  &add_accent C  &add_accent V  &add_accent B    &add_accent N  &add_accent M  &add_accent COMMA  &add_accent DOT  &add_accent FSLH  &trans
+                                      &trans         &trans         &trans           &trans         &trans         &trans
             >;
         };
     };
