@@ -29,6 +29,17 @@
 
             label = "N_TILDE";
         };
+
+        add_accent: add_accent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp APOSTROPHE>,
+                <&macro_release>;
+
+            label = "ADD_ACCENT";
+        };
     };
 
     keymap {
@@ -43,8 +54,8 @@
 
             bindings = <
 &kp TAB      &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL    &kp A  &kp S  &kp D       &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
+&kp LCTRL    &kp A  &kp S  &kp D       &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &add_accent
+&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DOLLAR
                            &lt 3 LGUI  &mo 1  &kp ENTER    &kp SPACE  &mo 2  &kp RALT
             >;
         };
