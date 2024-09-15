@@ -47,12 +47,16 @@
             bindings =
                 <&macro_press>,
                 <&kp RCTRL>,
+                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp APOSTROPHE>,
-                <&macro_release>,
-                <&kp LCTRL &macro_param_1to1>,
+                <&macro_wait_time 50>,
+                <&macro_param_1to1>,
                 <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>;
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 50>,
+                <&macro_release>,
+                <&kp LCTRL>;
 
             label = "ADD_ACCENT";
         };
