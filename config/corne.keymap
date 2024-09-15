@@ -25,7 +25,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT &kp N0 &kp N2 &kp N4 &kp N1>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_ALT &kp N0 &kp N2 &kp N4 &kp N1>;
 
             label = "N_TILDE";
         };
@@ -35,8 +36,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
+                <&kp RCTRL &kp APOSTROPHE>,
                 <&macro_release>,
-                <&kp RCTRL &kp APOSTROPHE>;
+                <&kp LCTRL &kp APOSTROPHE>;
 
             label = "ADD_ACCENT";
         };
