@@ -16,6 +16,41 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
+
+        accent_a: accent_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT_A";
+            #binding-cells = <0>;
+            bindings = <&add_accent_a>, <&add_accent_A>;
+        };
+
+        accent_e: accent_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT_E";
+            #binding-cells = <0>;
+            bindings = <&add_accent_e>, <&add_accent_E>;
+        };
+
+        accent_i: accent_i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT_I";
+            #binding-cells = <0>;
+            bindings = <&add_accent_i>, <&add_accent_I>;
+        };
+
+        accent_o: accent_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT_O";
+            #binding-cells = <0>;
+            bindings = <&add_accent_o>, <&add_accent_O>;
+        };
+
+        accent_u: accent_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT_U";
+            #binding-cells = <0>;
+            bindings = <&add_accent_u>, <&add_accent_U>, <&none>;
+        };
     };
 
     macros {
@@ -33,153 +68,162 @@
 
             label = "N_TILDE";
         };
-        
-         add_accent_a: add_accent_a {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = 
-            <&macro_press>,
-            <&kp LEFT_ALT>,    // Presiona ALT izquierdo
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,  // Código Alt para 'á'
-            <&macro_release>,
-            <&kp LEFT_ALT>;    // Suelta ALT izquierdo
 
-        label = "ADD_ACCENT_A";
-    };
+        add_accent_a: add_accent_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
+            label = "ADD_ACCENT_A";
+        };
 
         // Macro para 'Á'
+
         add_accent_A: add_accent_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,  // Código Alt para 'Á'
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_A_CAPITAL";
         };
 
         // Macro para 'é'
+
         add_accent_e: add_accent_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,  // Código Alt para 'é'
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_E";
         };
 
         // Macro para 'É'
+
         add_accent_E: add_accent_E {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1>,  // Código Alt para 'É'
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_E_CAPITAL";
         };
 
         // Macro para 'í'
+
         add_accent_i: add_accent_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,  // Código Alt para 'í'
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_I";
         };
 
         // Macro para 'Í'
+
         add_accent_I: add_accent_I {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,  // Código Alt para 'Í'
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_I_CAPITAL";
         };
 
         // Macro para 'ó'
+
         add_accent_o: add_accent_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,  // Código Alt para 'ó'
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_O";
         };
 
         // Macro para 'Ó'
+
         add_accent_O: add_accent_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,  // Código Alt para 'Ó'
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_O_CAPITAL";
         };
 
         // Macro para 'ú'
+
         add_accent_u: add_accent_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,  // Código Alt para 'ú'
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_U";
         };
 
         // Macro para 'Ú'
+
         add_accent_U: add_accent_U {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,    // Presiona ALT izquierdo
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,  // Código Alt para 'Ú'
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;    // Suelta ALT izquierdo
-
+                <&kp LEFT_ALT>;
+    // Suelta ALT izquierdo
             label = "ADD_ACCENT_U_CAPITAL";
         };
     };
@@ -195,10 +239,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB      &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
-&kp LCTRL    &kp A  &kp S  &kp D       &kp F  &kp G        &kp H      &kp J  &kp K         &kp L    &kp SEMI  &n_tilde
-&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp APOSTROPHE
-                           &lt 3 LGUI  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT_ALT
+&kp TAB      &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y      &kp U     &kp I         &kp O      &kp P       &kp BSPC
+&kp LCTRL    &kp A  &kp S  &kp D       &kp F  &kp G        &kp H      &kp J     &kp K         &kp L      &kp SEMI    &kp APOS
+&shiftnCaps  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp N      &n_tilde  &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
+                           &lt 3 LGUI  &mo 1  &kp SPACE    &kp SPACE  &mo 2     &kp LEFT_ALT
             >;
         };
 
@@ -288,6 +332,11 @@
             bindings = <&kp LC(Y)>;
             key-positions = <38 6>;
             layers = <2>;
+        };
+
+        accent_A {
+            bindings = <&accent_a>;
+            key-positions = <13 23>;
         };
     };
 };
