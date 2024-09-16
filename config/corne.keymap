@@ -79,7 +79,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_A";
         };
 
@@ -95,7 +97,9 @@
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_A_CAPITAL";
         };
 
@@ -111,7 +115,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_E";
         };
 
@@ -127,7 +133,9 @@
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_E_CAPITAL";
         };
 
@@ -143,7 +151,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_I";
         };
 
@@ -159,7 +169,9 @@
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_I_CAPITAL";
         };
 
@@ -175,7 +187,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_O";
         };
 
@@ -191,7 +205,9 @@
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_O_CAPITAL";
         };
 
@@ -207,7 +223,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_U";
         };
 
@@ -223,7 +241,9 @@
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
-    // Suelta ALT izquierdo
+
+            // Suelta ALT izquierdo
+
             label = "ADD_ACCENT_U_CAPITAL";
         };
     };
@@ -332,11 +352,6 @@
             bindings = <&kp LC(Y)>;
             key-positions = <38 6>;
             layers = <2>;
-        };
-
-        accent_A {
-            bindings = <&accent_a>;
-            key-positions = <13 23>;
         };
     };
 };
