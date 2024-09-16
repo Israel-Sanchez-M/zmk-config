@@ -102,7 +102,7 @@
 
         layer_5 {
             bindings = <
-&trans  &kp V      &kp H          &kp F              &kp T      &kp C        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp V      &kp H          &kp C              &kp T      &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(D)  &kp LA(LC(G))  &kp LC(BACKSPACE)  &kp LC(G)  &kp LS(A)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans         &trans             &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans             &trans     &trans       &trans  &trans  &trans
