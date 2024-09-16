@@ -17,37 +17,37 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
 
-        accent_aa: accent_aa {
+        baccent_aa: baccent_aa {
             compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_AA";
+            label = "BACCENT_AA";
             #binding-cells = <0>;
             bindings = <&add_accent_a>, <&add_accent_aa>;
         };
 
-        accent_ee: accent_ee {
+        baccent_ee: baccent_ee {
             compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_EE";
+            label = "BACCENT_EE";
             #binding-cells = <0>;
             bindings = <&add_accent_e>, <&add_accent_ee>;
         };
 
-        accent_ii: accent_ii {
+        baccent_ii: baccent_ii {
             compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_II";
+            label = "BACCENT_II";
             #binding-cells = <0>;
             bindings = <&add_accent_i>, <&add_accent_ii>;
         };
 
-        accent_oo: accent_oo {
+        baccent_oo: baccent_oo {
             compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_OO";
+            label = "BACCENT_OO";
             #binding-cells = <0>;
             bindings = <&add_accent_o>, <&add_accent_oo>;
         };
 
-        accent_uu: accent_uu {
+        baccent_uu: baccent_uu {
             compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_UU";
+            label = "BACCENT_UU";
             #binding-cells = <0>;
             bindings = <&add_accent_u>, <&add_accent_uu>, <&none>;
         };
@@ -355,7 +355,7 @@
         };
 
         acc_a {
-            bindings = <&accent_aa>;
+            bindings = <&baccent_aa>;
             key-positions = <23 13>;
         };
     };
