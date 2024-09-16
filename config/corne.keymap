@@ -33,24 +33,6 @@
 
             label = "N_TILDE";
         };
-
-        add_accent: add_accent {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp APOSTROPHE>,
-                <&macro_wait_time 50>,
-                <&macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&kp LCTRL>;
-
-            label = "ADD_ACCENT";
-        };
     };
 
     keymap {
@@ -82,7 +64,7 @@
 &kp TAB              &kp N1         &kp N2         &kp N3  &kp N4  &kp N5       &kp N6    &kp N7    &kp N8      &kp N9        &kp N0        &kp BSPC
 &trans               &kp LC(COMMA)  &kp LA(LS(F))  &kp F3  &kp F4  &kp F5       &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT     &kp HOME      &kp END
 &mt LSHIFT CAPSLOCK  &trans         &trans         &trans  &trans  &trans       &n_tilde  &trans    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp ESC
-                                                   &trans  &trans  &kp SPACE    &kp RET   &sl 4     &trans
+                                                   &trans  &trans  &kp SPACE    &kp RET   &trans    &trans
             >;
         };
 
@@ -112,10 +94,10 @@
 
         layer_4 {
             bindings = <
-&trans  &add_accent Q  &add_accent W  &add_accent E  &add_accent R  &add_accent T    &add_accent Y  &add_accent U  &add_accent I      &add_accent O    &add_accent P     &trans
-&trans  &add_accent A  &add_accent S  &add_accent D  &add_accent F  &add_accent G    &add_accent H  &add_accent J  &add_accent K      &add_accent L    &add_accent N     &trans
-&trans  &add_accent Z  &add_accent X  &add_accent C  &add_accent V  &add_accent B    &add_accent N  &add_accent M  &add_accent COMMA  &add_accent DOT  &add_accent FSLH  &trans
-                                      &trans         &trans         &trans           &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
