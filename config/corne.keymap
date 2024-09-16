@@ -21,232 +21,232 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BACCENT_AA";
             #binding-cells = <0>;
-            bindings = <&add_accent_a>, <&add_accent_aa>;
+            bindings = <&add_accent_a>, <&add_accent_a_capital>;
         };
 
         baccent_ee: baccent_ee {
             compatible = "zmk,behavior-tap-dance";
             label = "BACCENT_EE";
             #binding-cells = <0>;
-            bindings = <&add_accent_e>, <&add_accent_ee>;
+            bindings = <&add_accent_e>, <&add_accent_e_capital>;
         };
 
         baccent_ii: baccent_ii {
             compatible = "zmk,behavior-tap-dance";
             label = "BACCENT_II";
             #binding-cells = <0>;
-            bindings = <&add_accent_i>, <&add_accent_ii>;
+            bindings = <&add_accent_i>, <&add_accent_i_capital>;
         };
 
         baccent_oo: baccent_oo {
             compatible = "zmk,behavior-tap-dance";
             label = "BACCENT_OO";
             #binding-cells = <0>;
-            bindings = <&add_accent_o>, <&add_accent_oo>;
+            bindings = <&add_accent_o>, <&add_accent_o_capital>;
         };
 
         baccent_uu: baccent_uu {
             compatible = "zmk,behavior-tap-dance";
             label = "BACCENT_UU";
             #binding-cells = <0>;
-            bindings = <&add_accent_u>, <&add_accent_uu>, <&none>;
+            bindings = <&add_accent_u>, <&add_accent_u_capital>;
         };
     };
 
-   macros {
-    n_tilde: n_tilde {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
-            <&macro_release>,
-            <&kp LEFT_ALT>,
-            <&macro_press>;
+    macros {
+        n_tilde: n_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_press>;
 
-        label = "N_TILDE";
+            label = "N_TILDE";
+        };
+
+        add_accent_a: add_accent_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_A";
+        };
+
+        // Macro para 'Á'
+
+        add_accent_a_capital: add_accent_a_capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_A_CAPITAL";
+        };
+
+        // Macro para 'é'
+
+        add_accent_e: add_accent_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_E";
+        };
+
+        // Macro para 'É'
+
+        add_accent_e_capital: add_accent_e_capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_E_CAPITAL";
+        };
+
+        // Macro para 'í'
+
+        add_accent_i: add_accent_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_I";
+        };
+
+        // Macro para 'Í'
+
+        add_accent_i_capital: add_accent_i_capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_I_CAPITAL";
+        };
+
+        // Macro para 'ó'
+
+        add_accent_o: add_accent_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_O";
+        };
+
+        // Macro para 'Ó'
+
+        add_accent_o_capital: add_accent_o_capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_O_CAPITAL";
+        };
+
+        // Macro para 'ú'
+
+        add_accent_u: add_accent_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_U";
+        };
+
+        // Macro para 'Ú'
+
+        add_accent_u_capital: add_accent_u_capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            // Suelta ALT izquierdo
+
+            label = "ADD_ACCENT_U_CAPITAL";
+        };
     };
-
-    add_accent_a: add_accent_a {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_A";
-    };
-
-    // Macro para 'Á'
-
-    add_accent_a_capital: add_accent_a_capital {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_A_CAPITAL";
-    };
-
-    // Macro para 'é'
-
-    add_accent_e: add_accent_e {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_E";
-    };
-
-    // Macro para 'É'
-
-    add_accent_e_capital: add_accent_e_capital {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_E_CAPITAL";
-    };
-
-    // Macro para 'í'
-
-    add_accent_i: add_accent_i {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_I";
-    };
-
-    // Macro para 'Í'
-
-    add_accent_i_capital: add_accent_i_capital {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_I_CAPITAL";
-    };
-
-    // Macro para 'ó'
-
-    add_accent_o: add_accent_o {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_O";
-    };
-
-    // Macro para 'Ó'
-
-    add_accent_o_capital: add_accent_o_capital {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_O_CAPITAL";
-    };
-
-    // Macro para 'ú'
-
-    add_accent_u: add_accent_u {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_U";
-    };
-
-    // Macro para 'Ú'
-
-    add_accent_u_capital: add_accent_u_capital {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings =
-            <&macro_press>,
-            <&kp LEFT_ALT>,
-            <&macro_tap>,
-            <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
-            <&macro_release>,
-            <&kp LEFT_ALT>;
-
-        // Suelta ALT izquierdo
-
-        label = "ADD_ACCENT_U_CAPITAL";
-    };
-};
 
     keymap {
         compatible = "zmk,keymap";
