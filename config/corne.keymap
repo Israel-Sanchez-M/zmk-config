@@ -21,35 +21,35 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ACCENT_AA";
             #binding-cells = <0>;
-            bindings = <&add_accent_a>, <&add_accent_A>;
+            bindings = <&add_accent_a>, <&add_accent_aa>;
         };
 
         accent_ee: accent_ee {
             compatible = "zmk,behavior-tap-dance";
             label = "ACCENT_EE";
             #binding-cells = <0>;
-            bindings = <&add_accent_e>, <&add_accent_E>;
+            bindings = <&add_accent_e>, <&add_accent_ee>;
         };
 
         accent_ii: accent_ii {
             compatible = "zmk,behavior-tap-dance";
             label = "ACCENT_II";
             #binding-cells = <0>;
-            bindings = <&add_accent_i>, <&add_accent_I>;
+            bindings = <&add_accent_i>, <&add_accent_ii>;
         };
 
         accent_oo: accent_oo {
             compatible = "zmk,behavior-tap-dance";
             label = "ACCENT_OO";
             #binding-cells = <0>;
-            bindings = <&add_accent_o>, <&add_accent_O>;
+            bindings = <&add_accent_o>, <&add_accent_oo>;
         };
 
         accent_uu: accent_uu {
             compatible = "zmk,behavior-tap-dance";
             label = "ACCENT_UU";
             #binding-cells = <0>;
-            bindings = <&add_accent_u>, <&add_accent_U>, <&none>;
+            bindings = <&add_accent_u>, <&add_accent_uu>, <&none>;
         };
     };
 
@@ -87,7 +87,7 @@
 
         // Macro para 'Á'
 
-        add_accent_A: add_accent_A {
+        add_accent_aa: add_accent_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -123,7 +123,7 @@
 
         // Macro para 'É'
 
-        add_accent_E: add_accent_E {
+        add_accent_ee: add_accent_E {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -159,7 +159,7 @@
 
         // Macro para 'Í'
 
-        add_accent_I: add_accent_I {
+        add_accent_ii: add_accent_I {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -195,7 +195,7 @@
 
         // Macro para 'Ó'
 
-        add_accent_O: add_accent_O {
+        add_accent_oo: add_accent_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -231,7 +231,7 @@
 
         // Macro para 'Ú'
 
-        add_accent_U: add_accent_U {
+        add_accent_uu: add_accent_U {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
