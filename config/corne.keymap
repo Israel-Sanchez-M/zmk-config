@@ -16,41 +16,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
-
-        baccent_aa: baccent_aa {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACCENT_AA";
-            #binding-cells = <0>;
-            bindings = <&add_accent_a>, <&add_accent_a_capital>;
-        };
-
-        baccent_ee: baccent_ee {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACCENT_EE";
-            #binding-cells = <0>;
-            bindings = <&add_accent_e>, <&add_accent_e_capital>;
-        };
-
-        baccent_ii: baccent_ii {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACCENT_II";
-            #binding-cells = <0>;
-            bindings = <&add_accent_i>, <&add_accent_i_capital>;
-        };
-
-        baccent_oo: baccent_oo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACCENT_OO";
-            #binding-cells = <0>;
-            bindings = <&add_accent_o>, <&add_accent_o_capital>;
-        };
-
-        baccent_uu: baccent_uu {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACCENT_UU";
-            #binding-cells = <0>;
-            bindings = <&add_accent_u>, <&add_accent_u_capital>;
-        };
     };
 
     macros {
@@ -355,8 +320,53 @@
         };
 
         acc_a {
-            bindings = <&baccent_aa>;
+            bindings = <&add_accent_a>;
             key-positions = <23 13>;
+        };
+
+        acc_a_capital {
+            bindings = <&add_accent_a_capital>;
+            key-positions = <24 23 13>;
+        };
+
+        acc_e {
+            bindings = <&add_accent_e>;
+            key-positions = <23 3>;
+        };
+
+        acc_e_capital {
+            bindings = <&add_accent_e_capital>;
+            key-positions = <23 24 3>;
+        };
+
+        acc_i {
+            bindings = <&add_accent_i>;
+            key-positions = <23 8>;
+        };
+
+        acc_i_capital {
+            bindings = <&add_accent_i_capital>;
+            key-positions = <23 8 24>;
+        };
+
+        acc_o {
+            bindings = <&add_accent_o>;
+            key-positions = <23 9>;
+        };
+
+        acc_o_capital {
+            bindings = <&add_accent_o_capital>;
+            key-positions = <23 9 24>;
+        };
+
+        acc_u {
+            bindings = <&add_accent_u>;
+            key-positions = <35 7>;
+        };
+
+        acc_u_capital {
+            bindings = <&add_accent_u_capital>;
+            key-positions = <35 7 24>;
         };
     };
 };
