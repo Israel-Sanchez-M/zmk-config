@@ -154,6 +154,11 @@
             key-positions = <1 2>;
             layers = <3 4>;
         };
+
+        left_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <38 29>;
+        };
     };
 
     conditional_layers {
