@@ -93,7 +93,7 @@
 
         webflow {
             bindings = <
-&trans  &kp LS(P)      &kp LC(E)      &kp LC(ENTER)  &kp LS(LC(ENTER))  &kp LA(LC(ENTER))    &tog 6  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(P)      &kp LC(E)      &kp LC(ENTER)  &kp LS(LC(ENTER))  &kp LA(LC(ENTER))    &mo 6   &trans  &trans  &trans  &trans  &trans
 &trans  &kp S          &kp D          &kp H          &kp Z              &kp LS(LA(ENTER))    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(LC(G))  &kp LA(LC(A))  &kp LS(LC(A))  &kp LC(LS(Z))      &trans               &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans         &trans             &trans               &trans  &trans  &trans
