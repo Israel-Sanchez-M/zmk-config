@@ -177,7 +177,7 @@
         };
 
         to_bt {
-            bindings = <&mo 6>;
+            bindings = <&tog 6>;
             key-positions = <30 19 20 21>;
             layers = <0>;
         };
