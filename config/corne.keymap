@@ -129,10 +129,10 @@
 
         gamer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R         &kp T           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F         &kp G           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V         &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp CAPSLOCK  &kp LEFT_ALT  &kp SPACE       &trans  &trans  &trans
+&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F  &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V  &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp CAPSLOCK  &mo 8  &kp SPACE       &trans  &trans  &trans
             >;
         };
 
