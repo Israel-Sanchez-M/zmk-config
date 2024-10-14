@@ -40,8 +40,8 @@
                 <&macro_press>;
 
             label = "N_TILDE";
-            wait-ms = <(-3)>;
-            tap-ms = <(-1)>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
