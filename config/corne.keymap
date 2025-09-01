@@ -209,7 +209,7 @@
         compatible = "zmk,conditional-layers";
 
         bt_confug {
-            if-layers = <1 2>;
+            if-layers = <1 2 3>;
             then-layer = <6>;
         };
     };
